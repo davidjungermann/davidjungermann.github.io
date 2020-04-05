@@ -13,6 +13,8 @@ html * {
 }
 
 .jumbotron {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #ded29e;
   color: #685642;
 }
