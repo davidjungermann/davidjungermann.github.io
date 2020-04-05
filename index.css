@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "ralewayregular";
+  src: url("./assets/raleway-regular-webfont.woff2") format("woff2"),
+    url("./assets/raleway-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html * {
+  font-family: "ralewayregular", Arial !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.jumbotron {
+  background-color: #ded29e;
+  color: #685642;
+}
