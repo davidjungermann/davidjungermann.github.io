@@ -18,3 +18,8 @@ html * {
   background-color: #ded29e;
   color: #685642;
 }
+
+a.no-underline,
+a.no-underline:visited {
+  text-decoration: none;
+}
