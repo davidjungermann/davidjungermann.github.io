@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <style>{"body { background-color: #557A95; }"}</style>
+        <style>{"body { background-color: #f9f9f9; }"}</style>
       </Helmet>
       <Links></Links>
       <Header></Header>
