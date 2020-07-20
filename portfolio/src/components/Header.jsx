@@ -1,26 +1,12 @@
 import React from "react";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.png";
 import profile from "../assets/image_profile.jpg";
 import "../stylesheets/Header.css";
-import Jumbotron from "react-bootstrap/Jumbotron";
 
 class Header extends React.Component {
   render() {
     return (
       <div className="container">
         <div className="jumbotron">
-          <div className="float-right">
-            <div>
-              <a href="https://github.com/davidjungermann">
-                <img src={github} height="40" width="40" alt="Github" />
-              </a>
-              <a href="https://www.linkedin.com/in/david-jungermann-13a550162/">
-                <img src={linkedin} height="40" width="40" alt="LinkedIn" />
-              </a>
-            </div>
-          </div>
-
           <div className="container">
             <div className="row">
               <div className="col-md-4 align-middle">
