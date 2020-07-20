@@ -9,6 +9,7 @@
     "add": "^2.0.6",
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
+    "react-animated-text": "^0.1.4",
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",

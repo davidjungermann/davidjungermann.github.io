@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header";
-import Links from "./components/Links"
+import Links from "./components/Links";
+import Content from "./components/Content";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       </Helmet>
       <Links></Links>
       <Header></Header>
+      <Content></Content>
     </div>
   );
 }
