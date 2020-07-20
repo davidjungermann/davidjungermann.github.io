@@ -1,5 +1,7 @@
 import React from "react";
-
+import github from "../assets/github.svg"
+import linkedin from "../assets/linkedin.png"
+import profile from "../assets/image_profile.jpg"
 class Header extends React.Component {
   render() {
     return (
@@ -7,13 +9,13 @@ class Header extends React.Component {
         <div className="float-right">
           <div>
             <a href="https://github.com/davidjungermann" className="no-underline">
-              <img src="./github.svg" height="40" width="40" alt="Github"/>
+              <img src={github} height="40" width="40" alt="Github"/>
             </a>
             <a
               href="https://www.linkedin.com/in/david-jungermann-13a550162/"
               className="no-underline"
             >
-              <img src="./linkedin.png" height="40" width="40" alt="LinkedIn"/>
+              <img src={linkedin} height="40" width="40" alt="LinkedIn"/>
             </a>
           </div>
         </div>
@@ -22,7 +24,7 @@ class Header extends React.Component {
           <div className="row">
             <div className="col-md-4 align-middle">
               <img
-                src="./image_profile.jpg"
+                src={profile}
                 height="250"
                 width="250"
                 className="rounded-circle float-left"
