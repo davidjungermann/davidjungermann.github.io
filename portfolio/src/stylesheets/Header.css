@@ -1,3 +1,8 @@
 .jumbotron {
-    background-color: inherit !important;
+    background-color: #3B4252 !important;
+    border-radius: 0 !important;
+}
+
+.header-text {
+    color: #D8DEE9
 }

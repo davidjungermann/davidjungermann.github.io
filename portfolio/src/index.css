@@ -1,18 +1,11 @@
-@font-face {
-  font-family: "ralewayregular";
-  src: url("./fonts/raleway-regular-webfont.woff2") format("woff2"),
-    url("./fonts/raleway-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
-  font-family: "ralewayregular", Arial !important;
+  font-family: 'Quicksand', sans-serif, Arial !important;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
 }
 
 code {
