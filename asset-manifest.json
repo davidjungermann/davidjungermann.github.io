@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.248fee94.chunk.css",
-    "main.js": "/static/js/main.16ca4c5e.chunk.js",
-    "main.js.map": "/static/js/main.16ca4c5e.chunk.js.map",
+    "main.css": "/static/css/main.4e51e672.chunk.css",
+    "main.js": "/static/js/main.1f79fd5c.chunk.js",
+    "main.js.map": "/static/js/main.1f79fd5c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.727dd7f0.chunk.js": "/static/js/2.727dd7f0.chunk.js",
-    "static/js/2.727dd7f0.chunk.js.map": "/static/js/2.727dd7f0.chunk.js.map",
+    "static/js/2.bf22b667.chunk.js": "/static/js/2.bf22b667.chunk.js",
+    "static/js/2.bf22b667.chunk.js.map": "/static/js/2.bf22b667.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0ca9f1f0a55d5ada6e683baf665824f3.js": "/precache-manifest.0ca9f1f0a55d5ada6e683baf665824f3.js",
+    "precache-manifest.3623a5e5f53ab019e1a4747e54138587.js": "/precache-manifest.3623a5e5f53ab019e1a4747e54138587.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.248fee94.chunk.css.map": "/static/css/main.248fee94.chunk.css.map",
-    "static/js/2.727dd7f0.chunk.js.LICENSE.txt": "/static/js/2.727dd7f0.chunk.js.LICENSE.txt",
+    "static/css/main.4e51e672.chunk.css.map": "/static/css/main.4e51e672.chunk.css.map",
+    "static/js/2.bf22b667.chunk.js.LICENSE.txt": "/static/js/2.bf22b667.chunk.js.LICENSE.txt",
     "static/media/github.svg": "/static/media/github.0a3a0978.svg",
     "static/media/image_profile.jpg": "/static/media/image_profile.b4bd7107.jpg",
     "static/media/molecule.svg": "/static/media/molecule.787037a7.svg",
-    "static/media/index.css": "/static/media/raleway-regular-webfont.7dc86986.woff2",
     "static/media/skill.svg": "/static/media/skill.29c28037.svg",
     "static/media/spaceship.svg": "/static/media/spaceship.bd682d35.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf4b5f.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.727dd7f0.chunk.js",
-    "static/css/main.248fee94.chunk.css",
-    "static/js/main.16ca4c5e.chunk.js"
+    "static/js/2.bf22b667.chunk.js",
+    "static/css/main.4e51e672.chunk.css",
+    "static/js/main.1f79fd5c.chunk.js"
   ]
 }
