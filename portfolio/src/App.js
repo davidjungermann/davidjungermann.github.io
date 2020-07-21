@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header";
-import Links from "./components/Links";
+//import Links from "./components/Links";
 import Content from "./components/Content";
 import { Helmet } from "react-helmet";
 
@@ -11,7 +11,6 @@ function App() {
       <Helmet>
         <style>{"body { background-color: #D8DEE9; }"}</style>
       </Helmet>
-      <Links></Links>
       <Header></Header>
       <Content></Content>
     </div>
