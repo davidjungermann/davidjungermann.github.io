@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^7.1.2",
     "add": "^2.0.6",
     "bootstrap": "^4.5.0",
-    "copyfiles": "^2.3.0",
     "react": "^16.13.1",
     "react-animated-text": "^0.1.4",
     "react-bootstrap": "^1.2.2",
@@ -23,8 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build copyfiles CNAME build",
-    "CNAME": "copyfiles CNAME build", 
+    "predeploy": "yarn run build && cp ./src/CNAME build",
     "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
