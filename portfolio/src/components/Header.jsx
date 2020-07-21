@@ -12,7 +12,7 @@ class Header extends React.Component {
                 src={profile}
                 height="250"
                 width="250"
-                className="rounded-circle float-left"
+                className="rounded-circle"
                 alt="Profile"
               />
             </div>
