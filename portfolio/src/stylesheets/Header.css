@@ -1,8 +1,11 @@
-.jumbotron {
+.header{
     background-color: #3B4252 !important;
     border-radius: 0 !important;
+    height: inherit;
+    padding-top: 1%;
 }
 
 .header-text {
-    color: #D8DEE9
+    color: #D8DEE9;
+    padding-top: 50px;
 }

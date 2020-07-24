@@ -2,7 +2,6 @@ import React from "react";
 import experiences from "../assets/molecule.svg";
 import projects from "../assets/spaceship.svg";
 import skills from "../assets/skill.svg";
-import "../stylesheets/Content.css"
 class Content extends React.Component {
   render() {
     return (
