@@ -4,25 +4,26 @@ import Fullpage, {
   FullpageSection,
 } from "@ap.cx/react-fullpage";
 import Header from "./Header";
-import "../stylesheets/Information.css"
+import Content from "./Content";
+import "../stylesheets/Information.css";
 
 export default class App extends Component {
   render() {
     return (
       <Fullpage>
         <FullPageSections>
-          <div className="d-container">
-            <FullpageSection
-              style={{
-                backgroundColor: "#D8DEE9",
-                height: "100vh",
-              }}
-            >
-              <Header></Header>
-            </FullpageSection>
-          </div>
-          <FullpageSection>2</FullpageSection>
-          <FullpageSection>3</FullpageSection>
+          <FullpageSection
+            style={{
+              backgroundColor: "#D8DEE9",
+              height: "100vh",
+            }}
+          >
+            <Header></Header>
+          </FullpageSection>
+
+          <FullpageSection>
+            <Content></Content>
+          </FullpageSection>
         </FullPageSections>
       </Fullpage>
     );
