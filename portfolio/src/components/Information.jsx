@@ -3,9 +3,9 @@ import Fullpage, {
   FullPageSections,
   FullpageSection,
 } from "@ap.cx/react-fullpage";
-import Header from "./Header";
+import Start from "./Start";
 import Content from "./Content";
-import Links from "./Links";
+import Header from "./Header";
 import "../stylesheets/Information.css";
 
 export default class App extends Component {
@@ -19,8 +19,8 @@ export default class App extends Component {
               height: "100vh",
             }}
           >
-            <Links></Links>
             <Header></Header>
+            <Start></Start>
           </FullpageSection>
 
           <FullpageSection>
