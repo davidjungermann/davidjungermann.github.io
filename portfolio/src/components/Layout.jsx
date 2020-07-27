@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Fullpage, {
   FullPageSections,
   FullpageSection,
@@ -9,28 +9,26 @@ import Header from "./Header";
 import "../stylesheets/Information.css";
 import Projects from "./Projects";
 
-export default class App extends Component {
-  render() {
-    return (
-      <Fullpage>
-        <FullPageSections>
-          <FullpageSection
-            style={{
-              backgroundColor: "#D8DEE9",
-              height: "100vh",
-            }}
-          >
-            <Header></Header>
-            <Start></Start>
-          </FullpageSection>
-          <FullpageSection>
-            <About></About>
-          </FullpageSection>
-          <FullpageSection>
-            <Projects></Projects>
-          </FullpageSection>
-        </FullPageSections>
-      </Fullpage>
-    );
-  }
+export default function Layout() {
+  return (
+    <Fullpage>
+      <FullPageSections>
+        <FullpageSection
+          style={{
+            backgroundColor: "#D8DEE9",
+            height: "100vh",
+          }}
+        >
+          <Header></Header>
+          <Start></Start>
+        </FullpageSection>
+        <FullpageSection>
+          <About></About>
+        </FullpageSection>
+        <FullpageSection>
+          <Projects></Projects>
+        </FullpageSection>
+      </FullPageSections>
+    </Fullpage>
+  );
 }
