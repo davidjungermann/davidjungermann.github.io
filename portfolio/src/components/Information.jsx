@@ -4,9 +4,10 @@ import Fullpage, {
   FullpageSection,
 } from "@ap.cx/react-fullpage";
 import Start from "./Start";
-import Content from "./Content";
+import About from "./About";
 import Header from "./Header";
 import "../stylesheets/Information.css";
+import Projects from "./Projects";
 
 export default class App extends Component {
   render() {
@@ -22,9 +23,11 @@ export default class App extends Component {
             <Header></Header>
             <Start></Start>
           </FullpageSection>
-
           <FullpageSection>
-            <Content></Content>
+            <About></About>
+          </FullpageSection>
+          <FullpageSection>
+            <Projects></Projects>
           </FullpageSection>
         </FullPageSections>
       </Fullpage>

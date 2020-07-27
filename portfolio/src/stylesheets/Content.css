@@ -1,3 +1,16 @@
-.content{
-    padding-top: 3%;
+.content {
+  padding-top: 10%;
+  text-align: left;
+}
+
+.info-body {
+    font-size: 18px;
+}
+
+.para-end {
+    margin-bottom: 3%;
+}
+
+.content-heading {
+    margin-bottom: 3%;
 }
