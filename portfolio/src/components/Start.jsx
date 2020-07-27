@@ -1,7 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import profile from "../assets/image_profile.jpg";
-import "../stylesheets/Header.css";
+import "../stylesheets/Start.css";
 
 function Start() {
   const props = useSpring({
