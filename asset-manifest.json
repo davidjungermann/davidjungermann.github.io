@@ -1,30 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.c91a14ae.chunk.css",
-    "main.js": "/static/js/main.3fdc5a52.chunk.js",
-    "main.js.map": "/static/js/main.3fdc5a52.chunk.js.map",
+    "main.css": "/static/css/main.7c9fa63b.chunk.css",
+    "main.js": "/static/js/main.59265caa.chunk.js",
+    "main.js.map": "/static/js/main.59265caa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.83651e3b.chunk.js": "/static/js/2.83651e3b.chunk.js",
-    "static/js/2.83651e3b.chunk.js.map": "/static/js/2.83651e3b.chunk.js.map",
+    "static/js/2.37170bfe.chunk.js": "/static/js/2.37170bfe.chunk.js",
+    "static/js/2.37170bfe.chunk.js.map": "/static/js/2.37170bfe.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ef7f113de2ba40c647ac08d9127aef94.js": "/precache-manifest.ef7f113de2ba40c647ac08d9127aef94.js",
+    "precache-manifest.5bfb59a08aa12ee3e19060f1c5758c35.js": "/precache-manifest.5bfb59a08aa12ee3e19060f1c5758c35.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.c91a14ae.chunk.css.map": "/static/css/main.c91a14ae.chunk.css.map",
-    "static/js/2.83651e3b.chunk.js.LICENSE.txt": "/static/js/2.83651e3b.chunk.js.LICENSE.txt",
+    "static/css/main.7c9fa63b.chunk.css.map": "/static/css/main.7c9fa63b.chunk.css.map",
+    "static/js/2.37170bfe.chunk.js.LICENSE.txt": "/static/js/2.37170bfe.chunk.js.LICENSE.txt",
     "static/media/github.svg": "/static/media/github.0a3a0978.svg",
     "static/media/image_profile.jpg": "/static/media/image_profile.b4bd7107.jpg",
-    "static/media/molecule.svg": "/static/media/molecule.787037a7.svg",
-    "static/media/skill.svg": "/static/media/skill.29c28037.svg",
-    "static/media/spaceship.svg": "/static/media/spaceship.bd682d35.svg"
+    "static/media/resume.pdf": "/static/media/resume.56065664.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf4b5f.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.83651e3b.chunk.js",
-    "static/css/main.c91a14ae.chunk.css",
-    "static/js/main.3fdc5a52.chunk.js"
+    "static/js/2.37170bfe.chunk.js",
+    "static/css/main.7c9fa63b.chunk.css",
+    "static/js/main.59265caa.chunk.js"
   ]
 }
