@@ -10,9 +10,9 @@ class About extends React.Component {
           <div className="info-body">
             <h1 className="content-heading">About me</h1>
             <p>
-              My name is David Jungermann, and I'm a final year MSc student in{" "}
+              My name is David Jungermann, and an MSc student in{" "}
               <b>Information and Communication engineering technologies</b> at
-              LTH.
+              LTH, graduating spring 2021.
             </p>
             <p>
               I'm currently working my second year as a full stack developer at

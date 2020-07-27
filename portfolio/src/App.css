@@ -1,6 +1,28 @@
 .App {
   text-align: center;
-  background-color: #D8DEE9;
+  background-color: #d8dee9;
 }
 
+/* unvisited link */
+b a:link,
+p a:link {
+  color: #274972;
+}
 
+/* visited link */
+b a:visited,
+p a:visited {
+  color: #274972;
+}
+
+/* mouse over link */
+b a:hover,
+p a:hover {
+  color: #274972;
+}
+
+/* selected link */
+b a:active,
+p a:active {
+  color: #274972;
+}

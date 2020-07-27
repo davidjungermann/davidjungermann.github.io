@@ -13,6 +13,13 @@ class Projects extends React.Component {
             <p>
               <a href="https://github.com/davidjungermann/voting-vg">Source</a>
             </p>
+            Portfolio page, which happens to be this very page! Built in React
+            and hosted on Github Pages.
+            <p>
+              <a href="https://github.com/davidjungermann/davidjungermann.github.io">
+                Source
+              </a>
+            </p>
             Forum mock up. Built in Angular, uses AngularFire.
             <p>
               <a href="https://github.com/davidjungermann/EDAF90-project">
