@@ -27,7 +27,7 @@ function Start() {
           <h1>David Jungermann</h1>
           <h5>5th year MSc student at LTH</h5>
           <h5>
-            Full stack developer in the Student Talent programme at Tetra Pak
+            Full stack developer in the Student Talent program at Tetra Pak
           </h5>
         </div>
         <div></div>

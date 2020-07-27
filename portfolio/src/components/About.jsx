@@ -9,7 +9,7 @@ function About() {
         <div className="info-body">
           <h1 className="content-heading">About me</h1>
           <p>
-            My name is David Jungermann, and an MSc student in{" "}
+            My name is David Jungermann, and I'm an MSc student in{" "}
             <b>Information and Communication engineering technologies</b> at
             LTH, graduating spring 2021.
           </p>
@@ -26,9 +26,12 @@ function About() {
           </p>
           <p className="para-end">
             For further information, check out my resume{" "}
-            <a href={resume} download>
-              here.
-            </a>
+            <b>
+              {" "}
+              <a href={resume} download>
+                here.
+              </a>
+            </b>
           </p>
           Shoot me an{" "}
           <b>
