@@ -4,7 +4,7 @@ import "../stylesheets/Content.css";
 function Projects() {
   return (
     <div className="content">
-      <div class="container">
+      <div className="container">
         <div className="info-body">
           <h1 className="content-heading">Projects</h1>
           Vote counter that can be used generate results from votings made in

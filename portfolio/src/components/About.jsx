@@ -5,7 +5,7 @@ import "../stylesheets/Content.css";
 function About() {
   return (
     <div className="content">
-      <div class="container">
+      <div className="container">
         <div className="info-body">
           <h1 className="content-heading">About me</h1>
           <p>
