@@ -6,6 +6,8 @@ import "../stylesheets/Start.css";
 
 function Start() {
   const { x } = useSpring({
+    loop: true,
+    delay: 3000,
     from: { x: 0 },
     to: { x: 1 },
     config: { mass: 1, tension: 500, friction: 10 },
