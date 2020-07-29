@@ -6,7 +6,7 @@ import "../stylesheets/Content.css";
 function About() {
   return (
     <FullpageSection>
-      <div className="content">
+      <div className="content"> 
         <div className="container">
           <div className="info-body">
             <h1 className="content-heading">About me</h1>

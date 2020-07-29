@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import Header from "./Header";
@@ -7,6 +7,9 @@ import scroll from "../assets/arrow-down.svg";
 import "../stylesheets/Start.css";
 
 function Start() {
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const divRef = useRef(null);
+
   const { x } = useSpring({
     loop: true,
     delay: 3000,
@@ -17,7 +20,7 @@ function Start() {
 
   return (
     <FullpageSection>
-      <Header></Header>
+      <Header />
       <div className="header">
         <img
           src={profile}
@@ -46,11 +49,12 @@ function Start() {
               })
               .to((x) => `translate3d(0px, ${x}px, 0px)`),
           }}
-          onClick={() => {}}
+          onClick={() => scrollToRef(divRef)}
         >
           <img src={scroll} height="40" width="40" alt="scroll"></img>
         </animated.div>
       </div>
+      <div ref={divRef}></div>
     </FullpageSection>
   );
 }
