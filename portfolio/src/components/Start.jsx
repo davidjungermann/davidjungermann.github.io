@@ -33,22 +33,18 @@ function Start() {
         <div></div>
       </div>
       <animated.div
+        className="scroll"
         style={{
           transform: x
-            .interpolate({
+            .to({
               range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
               output: [0, -10, 0, 10, 0, -10, 0, 10, 0],
             })
-            .interpolate((x) => `translate3d(0px, ${x}px, 0px)`),
+            .to((x) => `translate3d(0px, ${x}px, 0px)`),
         }}
+        onClick={() => {}}
       >
-        <img
-          className="scroll"
-          src={scroll}
-          height="40"
-          width="40"
-          alt="scroll"
-        ></img>
+        <img src={scroll} height="40" width="40" alt="scroll"></img>
       </animated.div>
     </div>
   );

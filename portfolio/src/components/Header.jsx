@@ -6,6 +6,7 @@ import "../stylesheets/Header.css";
 function Header() {
   return (
     <div className="float-right">
+      <p className="float-left" style={{color: "#d8dee9", marginRight: "20px"}}>Work in progress</p>
       <a className="github" href="https://github.com/davidjungermann">
         <img src={github} height="40" width="40" alt="Github" />
       </a>
