@@ -1,6 +1,6 @@
 import React from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Jungermann_David_Resume.pdf"
 import "../stylesheets/Content.css";
 
 function About() {
