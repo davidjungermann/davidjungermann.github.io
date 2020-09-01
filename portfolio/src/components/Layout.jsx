@@ -7,7 +7,7 @@ import Projects from "./Projects";
 
 export default function Layout() {
   return (
-    <div className="fullpage-wrap">
+    <div className="">
       <Fullpage>
         <FullPageSections>
           <Start />
