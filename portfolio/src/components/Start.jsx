@@ -20,7 +20,6 @@ function Start() {
 
   return (
     <FullpageSection>
-       <h5 className="float-left" style={{color: "#d8dee9", marginLeft: "10px", marginTop: "0.5%"}}>Work in progress</h5>
       <Header />
       <div className="header">
         <img
