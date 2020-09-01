@@ -12,7 +12,6 @@ export default function Layout() {
   return (
     <div className="">
       <Fullpage>
-        <FullpageNavigation />
           <FullPageSections>
             <Start />
             <About />
