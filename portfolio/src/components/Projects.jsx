@@ -1,5 +1,6 @@
 import React from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
+import WebCard from "./WebCard";
 import "../stylesheets/Content.css";
 
 function Projects() {
@@ -10,120 +11,55 @@ function Projects() {
           <div className="info-body">
             <h1 className="content-heading">Projects</h1>
             <div className="row">
-              <div className="col-sm">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Voting system</h5>
-                    <p className="card-text">
-                      Application used for electronic voting. Used for
-                      generating results from votings made in Google Forms.
-                      Built in React, uses ExcelJS and Firebase.
-                    </p>
-                    <a
-                      href="https://github.com/davidjungermann/voting-vg"
-                      className="card-link"
-                    >
-                      Source
-                    </a>
-                    <a
-                      href="https://davidjungermann.com/voting-vg"
-                      className="card-link"
-                    >
-                      Website
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Personal website</h5>
-                    <p className="card-text">
-                      Portfolio, which happens to be this very page! Built in
-                      React and hosted on Github Pages.
-                    </p>
-                    <a
-                      href="https://github.com/davidjungermann/davidjungermann.github.io"
-                      className="card-link"
-                    >
-                      Source
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Message board forum</h5>
-                    <p className="card-text">
-                      Forum mock up. Built in Angular, uses AngularFire.
-                    </p>
-                    <a
-                      href="https://github.com/davidjungermann/EDAF90-project"
-                      className="card-link"
-                    >
-                      Source
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <WebCard
+                title="Vote couting application"
+                link="https://github.com/davidjungermann/voting-vg"
+              >
+                Application used for electronic voting. Used for generating
+                results from votings made in Google Forms. Built in React, uses
+                ExcelJS and Firebase.
+              </WebCard>
+
+              <WebCard
+                title="Personal website"
+                link="https://github.com/davidjungermann/davidjungermann.github.io"
+              >
+                Portfolio, which happens to be this very page! Built in React
+                and hosted on Github Pages.
+              </WebCard>
+
+              <WebCard
+                title="Message board forum"
+                link="https://github.com/davidjungermann/EDAF90-project"
+              >
+                Forum mock up, with real-time updating, and database storage.
+                Built in Angular, uses AngularFire.
+              </WebCard>
             </div>
 
             <div className="row">
-              <div className="col-sm">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">
-                      API and database implementation
-                    </h5>
-                    <p className="card-text">
-                      REST API with corresponding database that models
-                      production of cookies. Built in Java, using Spark, and
-                      SQLite.
-                    </p>
-                    <a
-                      href="https://github.com/davidjungermann/EDAF75-Project"
-                      className="card-link"
-                    >
-                      Source
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <WebCard
+                title="API and database implementation"
+                link="https://github.com/davidjungermann/EDAF75-Project"
+              >
+                REST API with corresponding database that models production of
+                cookies. Built in Java, using Spark, and SQLite.
+              </WebCard>
 
-              <div className="col-sm">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Object oriented programming</h5>
-                    <p className="card-text">
-                      Two projects that implement OOP principles. Built in Java.
-                    </p>
-                    <a
-                      href="https://github.com/davidjungermann/EDAF60"
-                      className="card-link"
-                    >
-                      Source
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm">
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Web security</h5>
-                    <p className="card-text">
-                      Mini-projects concerning web security, including payments,
-                      electronic voting and cybersecurity. Written in Python.
-                    </p>
-                    <a
-                      href="https://github.com/davidjungermann/EITN41"
-                      className="card-link"
-                    >
-                      Source
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <WebCard
+                title="Object oriented programming"
+                link="https://github.com/davidjungermann/EDAF60"
+              >
+                Two projects that implement OOP principles. Built in Java.
+              </WebCard>
+
+              <WebCard
+                title="Web security"
+                link="https://github.com/davidjungermann/EITN41"
+              >
+                Mini-projects concerning web security, including payments,
+                electronic voting and cybersecurity. Written in Python.
+              </WebCard>
             </div>
           </div>
         </div>
