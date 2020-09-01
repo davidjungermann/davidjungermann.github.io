@@ -6,7 +6,7 @@ import Fullpage, {
 import Start from "./Start";
 import About from "./About";
 import "../stylesheets/Layout.css";
-import Projects from "./Projects";
+import Projects from "./projects/Projects";
 
 export default function Layout() {
   return (

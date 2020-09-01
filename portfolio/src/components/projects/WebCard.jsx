@@ -1,9 +1,9 @@
 import React from "react";
-import "../stylesheets/Content.css";
+import "../../stylesheets/Content.css";
 
 function WebCards(props) {
   return (
-    <div className="col-md-3">
+    <div className="col-sm">
       <a href={props.link} className="webcard-link">
         <div className="card">
           <div className="card-body">

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import ProjectsContentDesktop from "./ProjectsContentDesktop";
 import ProjectsContentMobile from "./ProjectsContentMobile";
-import "../stylesheets/Projects.css";
 
 function Projects() {
   const [isDesktop, setDesktop] = useState(
