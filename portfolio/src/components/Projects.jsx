@@ -33,7 +33,7 @@ function Projects() {
                 link="https://github.com/davidjungermann/EDAF90-project"
               >
                 Forum mock up, with real-time updating, and database storage.
-                Built in Angular, uses AngularFire.
+                Built in Angular, uses Firestore.
               </WebCard>
             </div>
 
