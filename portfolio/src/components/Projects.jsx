@@ -1,7 +1,6 @@
 import React from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import WebCard from "./WebCard";
-import "../stylesheets/Content.css";
 
 function Projects() {
   return (
@@ -12,7 +11,7 @@ function Projects() {
             <h1 className="content-heading">Projects</h1>
             <div className="row">
               <WebCard
-                title="Vote couting application"
+                title="Vote counting application"
                 link="https://github.com/davidjungermann/voting-vg"
               >
                 Application used for electronic voting. Used for generating
