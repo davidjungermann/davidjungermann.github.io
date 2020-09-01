@@ -1,5 +1,6 @@
 import React from "react";
 import "../../stylesheets/Content.css";
+import "../../stylesheets/WebCard.css";
 
 function WebCards(props) {
   return (

@@ -1,0 +1,17 @@
+.card {
+    margin-top: 20px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    color: black;
+    width: inherit;
+  }
+  
+  .webcard-link {
+    text-decoration: none !important;
+  }
+  
+  .card:hover {
+    opacity: 1;
+    transform: translateY(2px);
+  }
