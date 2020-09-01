@@ -3,7 +3,7 @@ import "../stylesheets/Content.css";
 
 function WebCards(props) {
   return (
-    <div className="col-sm">
+    <div className="col-md-3">
       <a href={props.link} className="webcard-link">
         <div className="card">
           <div className="card-body">
