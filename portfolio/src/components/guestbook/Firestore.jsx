@@ -1,4 +1,5 @@
 import firebase from "firebase/app";
+import 'firebase/auth';
 import "firebase/firestore";
 import { collectionData } from "rxfire/firestore";
 
@@ -14,6 +15,7 @@ const app = firebase.initializeApp({
 });
 
 const firestore = firebase.firestore(app);
+const auth = firebase.auth(app); 
 
-export { app, firestore, collectionData };
+export { app, firestore, collectionData, auth };
 export default firebase;

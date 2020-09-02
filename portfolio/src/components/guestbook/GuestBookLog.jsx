@@ -33,7 +33,7 @@ class GuestBookLog extends React.Component {
         <ul className="list-group">
           {this.state.posts.map((post) => {
             return (
-              <div className="card">
+              <div className="card" key={post.id}>
                 <div className="card-body">
                   <h5 className="card-text">{post.content}</h5>
                   <i className="card-title">{post.alias}</i>
