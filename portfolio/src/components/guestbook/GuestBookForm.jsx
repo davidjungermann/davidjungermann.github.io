@@ -39,7 +39,6 @@ class GuestBookForm extends React.Component {
 
   addPost = (e) => {
     e.preventDefault();
-
     if (this.state.uid != null) {
       firestore.firestore().collection("posts").add({
         id: uuidv4(),
