@@ -2,10 +2,15 @@
   resize: none;
   border-radius: 2px;
   padding: 4px;
+  outline: none;
+  width: 50%;
+  height: 100px;
 }
 
 .input-name {
   padding: 4px;
+  outline: none;
+  width: 50%;
 }
 
 .submit-btn {

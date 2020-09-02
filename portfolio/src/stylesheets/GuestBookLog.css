@@ -1,20 +1,4 @@
 .list-group {
-  max-height: 500px;
+  max-height: 400px;
   overflow: auto;
-  margin-right: 80px;
 }
-
-.card {
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    color: black;
-    width: inherit;
-    margin-bottom: 10px;
-    margin-top: 0;
-  }
-  
-  .card:hover {
-    opacity: 1;
-    transform: translateY(2px);
-  }

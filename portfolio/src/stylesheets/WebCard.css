@@ -1,10 +1,10 @@
 .card {
-    margin-top: 20px;
     opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
     color: black;
     width: inherit;
+    margin-bottom: 20px;
   }
   
   .webcard-link {
