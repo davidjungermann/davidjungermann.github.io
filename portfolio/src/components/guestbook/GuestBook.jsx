@@ -11,7 +11,6 @@ function GuestBook(props) {
         <div className="container">
           <div className="info-body">
             <h1>Guestbook</h1>
-
             {props.isDesktop ? (
               <div>
                 <h5 className="content-heading">
