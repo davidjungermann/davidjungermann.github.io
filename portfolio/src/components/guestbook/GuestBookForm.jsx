@@ -22,7 +22,7 @@ class GuestBookForm extends React.Component {
   addPost = (e) => {
     e.preventDefault();
     const db = firestore.firestore();
-
+    
     const postRef = db.collection("posts").add({
       id: uuidv4(),
       alias: this.state.alias,

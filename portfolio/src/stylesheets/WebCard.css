@@ -7,6 +7,10 @@
     width: inherit;
   }
   
+  .webcard-link {
+    text-decoration: none !important;
+  }
+  
   .card:hover {
     opacity: 1;
     transform: translateY(2px);

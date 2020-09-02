@@ -17,6 +17,7 @@
   padding: 4px 16px;
   font-size: 20px;
   border-style:none;
+  margin-bottom: 20px;
 }
 
 .submit-btn:focus {

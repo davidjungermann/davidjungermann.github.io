@@ -11,13 +11,10 @@
     color: black;
     width: inherit;
     margin-bottom: 10px;
+    margin-top: 0;
   }
   
   .card:hover {
     opacity: 1;
     transform: translateY(2px);
-  }
-
-  .card-title {
-      float: right;
   }
