@@ -1,0 +1,16 @@
+import firebase from "firebase";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBFar1rJshSf-8ypeLkW3UibATroBG8SMY",
+  authDomain: "portfolio-a995c.firebaseapp.com",
+  databaseURL: "https://portfolio-a995c.firebaseio.com",
+  projectId: "portfolio-a995c",
+  storageBucket: "portfolio-a995c.appspot.com",
+  messagingSenderId: "413605765447",
+  appId: "1:413605765447:web:4a961720753b65a0a12c62",
+  measurementId: "G-7DQJ11CZND",
+};
+
+firebase.initializeApp(firebaseConfig);
+
+export default firebase;
