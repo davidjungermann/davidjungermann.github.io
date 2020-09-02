@@ -1,13 +1,23 @@
+.list-group {
+  max-height: 500px;
+  overflow: auto;
+  margin-right: 80px;
+}
+
 .card {
-    margin-top: 20px;
     opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
     color: black;
     width: inherit;
+    margin-bottom: 10px;
   }
   
   .card:hover {
     opacity: 1;
     transform: translateY(2px);
+  }
+
+  .card-title {
+      float: right;
   }
