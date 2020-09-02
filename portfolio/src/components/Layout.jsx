@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Fullpage, { FullPageSections } from "@ap.cx/react-fullpage";
 import Start from "./Start";
 import About from "./About";
@@ -7,14 +7,27 @@ import Projects from "./projects/Projects";
 import GuestBook from "./guestbook/GuestBook";
 
 export default function Layout() {
+  const [isDesktop, setDesktop] = useState(
+    window.innerWidth > 1024 && window.innerHeight > 768
+  );
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 1024 && window.innerHeight > 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
+
   return (
     <div className="">
       <Fullpage>
         <FullPageSections>
           <Start />
           <About />
-          <Projects />
-          <GuestBook />
+          <Projects isDesktop={isDesktop} />
+          <GuestBook isDesktop={isDesktop}/>
         </FullPageSections>
       </Fullpage>
     </div>

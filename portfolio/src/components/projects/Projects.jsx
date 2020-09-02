@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import ProjectsContentDesktop from "./ProjectsContentDesktop";
 import ProjectsContentMobile from "./ProjectsContentMobile";
 
-function Projects() {
-  const [isDesktop, setDesktop] = useState(
-    window.innerWidth > 1024 && window.innerHeight > 768
-  );
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 1024 && window.innerHeight > 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
-
+function Projects(props) {
   return (
     <FullpageSection>
-      {isDesktop ? <ProjectsContentDesktop /> : <ProjectsContentMobile />}
+      {props.isDesktop ? <ProjectsContentDesktop /> : <ProjectsContentMobile />}
     </FullpageSection>
   );
 }
