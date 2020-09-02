@@ -61,7 +61,7 @@ class GuestBookForm extends React.Component {
         content: "",
       });
     } else {
-      console.log("Har tidigare posts");
+      alert("In order to keep load reasonable, wait a bit before writing a new message!");
     }
     
   }
