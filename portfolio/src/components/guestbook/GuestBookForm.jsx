@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 class GuestBookForm extends React.Component {
   constructor() {
     super();
+    this.addPost = this.addPost.bind(this);
     this.state = {
       id: "",
       alias: "",
@@ -37,9 +38,12 @@ class GuestBookForm extends React.Component {
     });
   };
 
-  addPost = (e) => {
+  async addPost(e) {
     e.preventDefault();
-    if (this.state.uid != null) {
+    const users = firestore.firestore().collection("users");
+    const snapshot = await users.where("uid", "==", this.state.uid).get();
+
+    if(snapshot.empty) {
       firestore.firestore().collection("posts").add({
         id: uuidv4(),
         alias: this.state.alias,
@@ -48,12 +52,19 @@ class GuestBookForm extends React.Component {
         uid: this.state.uid,
       });
 
+      firestore.firestore().collection("users").add({
+        uid: this.state.uid,
+      });
+
       this.setState({
         alias: "",
         content: "",
       });
+    } else {
+      console.log("Har tidigare posts");
     }
-  };
+    
+  }
 
   render() {
     return (
