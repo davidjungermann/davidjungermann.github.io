@@ -14,7 +14,7 @@ function GuestBook(props) {
             {props.isDesktop ? (
               <div>
                 <h5 className="content-heading">
-                  Write something nice, pretend it's 2001!
+                  Write something nice, pretend it's 1999!
                 </h5>
                 <div className="row">
                   <div className="col-sm">
