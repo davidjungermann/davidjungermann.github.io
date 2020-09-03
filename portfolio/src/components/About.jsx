@@ -1,19 +1,19 @@
 import React from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
-import resume from "../assets/Jungermann_David_Resume.pdf"
+import resume from "../assets/Jungermann_David_Resume.pdf";
 import "../stylesheets/Content.css";
 
 function About() {
   return (
     <FullpageSection>
-      <div className="content"> 
+      <div className="content">
         <div className="container">
           <div className="info-body">
             <h1 className="content-heading">About me</h1>
             <p>
               My name is David Jungermann, and I'm an MSc student in{" "}
               <b>Information and Communication engineering technologies</b> at
-              LTH, graduating spring 2021. Currently based in Lund.
+              LTH, graduating spring 2021. Currently based in Lund, Sweden.
             </p>
             <p>
               I'm currently working my second year as a full stack developer at
@@ -39,7 +39,7 @@ function About() {
             <b>
               <a href="mailto:david.jungermann@gmail.com">email</a>
             </b>{" "}
-            if you want to get in touch!
+            , or write in my guestbook below, if you want to get in touch!
           </div>
         </div>
       </div>
