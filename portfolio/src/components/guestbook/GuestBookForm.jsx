@@ -4,7 +4,7 @@ import { auth } from "./Firestore";
 import "../../stylesheets/GuestBookForm.css";
 import { v4 as uuidv4 } from "uuid";
 
-import { Form, Col, Button, InputGroup } from "react-bootstrap";
+import { Form, Col } from "react-bootstrap";
 
 function GuestBookForm() {
   const [alias, setAlias] = useState("");
@@ -53,7 +53,6 @@ function GuestBookForm() {
       firestore.firestore().collection("users").add({
         uid: uid,
       });
-
     } else {
       setPosted(true);
     }
@@ -87,9 +86,16 @@ function GuestBookForm() {
               onChange={(e) => setContent(e.target.value)}
             />
             <Form.Control.Feedback type="invalid">
-              Please write your name and a message
+              Please write your name and a message.
             </Form.Control.Feedback>
-            {posted ? <p className="posted-message">Sorry, you can't write two messages in quick succession, wait a bit!</p> : <div></div>}
+            {posted ? (
+              <p className="posted-message">
+                Sorry, you can't write two messages in quick succession, wait a
+                bit!
+              </p>
+            ) : (
+              <div></div>
+            )}
           </Form.Group>
         </Form.Row>
         <button type="submit" className="submit-btn">
