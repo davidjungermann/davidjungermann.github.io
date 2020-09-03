@@ -11,6 +11,7 @@ function GuestBookForm() {
   const [content, setContent] = useState("");
   const [uid, setUid] = useState(null);
   const [validated, setValidated] = useState(false);
+  const [posted, setPosted] = useState(false);
 
   useEffect(() => {
     auth.signInAnonymously();
@@ -52,10 +53,9 @@ function GuestBookForm() {
       firestore.firestore().collection("users").add({
         uid: uid,
       });
+
     } else {
-      alert(
-        "In order to keep load reasonable, wait a bit before writing a new message!"
-      );
+      setPosted(true);
     }
     setAlias("");
     setContent("");
@@ -89,6 +89,7 @@ function GuestBookForm() {
             <Form.Control.Feedback type="invalid">
               Please write your name and a message
             </Form.Control.Feedback>
+            {posted ? <p className="posted-message">Sorry, you can't write two messages in quick succession, wait a bit!</p> : <div></div>}
           </Form.Group>
         </Form.Row>
         <button type="submit" className="submit-btn">

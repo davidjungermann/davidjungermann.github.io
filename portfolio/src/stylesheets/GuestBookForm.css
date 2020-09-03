@@ -13,6 +13,11 @@
   margin-bottom: 20px;
 }
 
+.posted-message {
+  width: inherit;
+  margin-top: 10px;
+}
+
 .submit-btn {
   background-color: #3b4252 !important;
   border-radius: 4px;
