@@ -13,7 +13,7 @@ function About() {
             <p>
               My name is David Jungermann, and I'm an MSc student in{" "}
               <b>Information and Communication engineering technologies</b> at
-              LTH, graduating spring 2021.
+              LTH, graduating spring 2021. Currently based in Lund.
             </p>
             <p>
               I'm currently working my second year as a full stack developer at
