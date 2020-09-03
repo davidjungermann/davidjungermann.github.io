@@ -2,6 +2,7 @@
   resize: none;
   border-radius: 2px;
   padding: 4px;
+  border: none;
   outline: none;
   width: 50%;
   height: 100px;
@@ -9,6 +10,7 @@
 
 .input-name {
   padding: 4px;
+  border: none;
   outline: none;
   width: 50%;
 }
@@ -21,7 +23,7 @@
   text-decoration: none;
   padding: 4px 16px;
   font-size: 20px;
-  border-style:none;
+  border-style: none;
   margin-bottom: 20px;
 }
 
