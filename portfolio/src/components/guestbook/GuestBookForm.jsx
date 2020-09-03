@@ -1,102 +1,82 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import firestore from "./Firestore";
 import { auth } from "./Firestore";
 import "../../stylesheets/GuestBookForm.css";
 import { v4 as uuidv4 } from "uuid";
 
-class GuestBookForm extends React.Component {
-  constructor() {
-    super();
-    this.addPost = this.addPost.bind(this);
-    this.state = {
-      id: "",
-      alias: "",
-      content: "",
-      uid: null,
-    };
-  }
+function GuestBookForm() {
+  const [alias, setAlias] = useState("");
+  const [content, setContent] = useState("");
+  const [uid, setUid] = useState(null);
 
-  componentDidMount() {
+  useEffect(() => {
     auth.signInAnonymously();
 
     auth.onAuthStateChanged((user) => {
       if (user) {
-        this.setState({
-          uid: user.uid,
-        });
+        setUid(user.uid);
       } else {
-        this.setState({
-          uid: null,
-        });
+        setUid(null);
       }
     });
-  }
+  }, []);
 
-  updateInput = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  async addPost(e) {
+  const addPost = async (e) => {
     e.preventDefault();
     const users = firestore.firestore().collection("users");
-    const snapshot = await users.where("uid", "==", this.state.uid).get();
+    const snapshot = await users.where("uid", "==", uid).get();
 
-    if(snapshot.empty) {
+    if (snapshot.empty) {
       firestore.firestore().collection("posts").add({
         id: uuidv4(),
-        alias: this.state.alias,
-        content: this.state.content,
+        alias: alias,
+        content: content,
         timestamp: firestore.firestore.Timestamp.now(),
-        uid: this.state.uid,
+        uid: uid,
       });
 
       firestore.firestore().collection("users").add({
-        uid: this.state.uid,
+        uid: uid,
       });
 
-      this.setState({
-        alias: "",
-        content: "",
-      });
+      setAlias("");
+      setContent("");
     } else {
-      alert("In order to keep load reasonable, wait a bit before writing a new message!");
+      alert(
+        "In order to keep load reasonable, wait a bit before writing a new message!"
+      );
     }
-    
-  }
+  };
 
-  render() {
-    return (
-      <form onSubmit={this.addPost}>
-        <div className="form-group">
-          <input
-            required
-            type="text"
-            name="alias"
-            className="input-name"
-            placeholder="Name"
-            onChange={this.updateInput}
-            value={this.state.alias}
-          />
-        </div>
-        <div className="form-group">
-          <textarea
-            required
-            className="input-content"
-            type="text"
-            name="content"
-            placeholder="Say hi!"
-            onChange={this.updateInput}
-            value={this.state.content}
-          />
-        </div>
-        <button type="submit" className="submit-btn">
-          Submit
-        </button>
-      </form>
-    );
-  }
+  return (
+    <form onSubmit={addPost}>
+      <div className="form-group">
+        <input
+          required
+          type="text"
+          name="alias"
+          className="input-name"
+          placeholder="Name"
+          onChange={(e) => setAlias(e.target.value)}
+          value={alias}
+        />
+      </div>
+      <div className="form-group">
+        <textarea
+          required
+          className="input-content"
+          type="text"
+          name="content"
+          placeholder="Say hi!"
+          onChange={(e) => setContent(e.target.value)}
+          value={content}
+        />
+      </div>
+      <button type="submit" className="submit-btn">
+        Submit
+      </button>
+    </form>
+  );
 }
 
 export default GuestBookForm;
