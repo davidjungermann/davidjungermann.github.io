@@ -27,7 +27,10 @@ function GuestBook(props) {
               </div>
             ) : (
               <div>
-                <h1 className="content-heading">Guestbook</h1>
+                <h1>Guestbook</h1>
+                <h5 className="content-heading">
+                  Use a device with a larger screen to write messages!
+                </h5>
                 <div className="col-sm">
                   <GuestBookLog></GuestBookLog>
                 </div>
