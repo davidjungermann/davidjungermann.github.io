@@ -8,11 +8,11 @@ import GuestBook from "./guestbook/GuestBook";
 
 export default function Layout() {
   const [isDesktop, setDesktop] = useState(
-    window.innerWidth > 1024 && window.innerHeight > 768
+    window.innerWidth > 900 && window.innerHeight > 500
   );
 
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 1024 && window.innerHeight > 768);
+    setDesktop(window.innerWidth > 900 && window.innerHeight > 500);
   };
 
   useEffect(() => {
