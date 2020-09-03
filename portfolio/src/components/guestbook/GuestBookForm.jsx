@@ -87,7 +87,7 @@ function GuestBookForm() {
               onChange={(e) => setContent(e.target.value)}
             />
             <Form.Control.Feedback type="invalid">
-              Please write your name and a message!
+              Please write your name and a message
             </Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
