@@ -10,9 +10,9 @@ function GuestBook(props) {
       <div className="content">
         <div className="container">
           <div className="info-body">
-            <h1>Guestbook</h1>
             {props.isDesktop ? (
               <div>
+                <h1>Guestbook</h1>
                 <h5 className="content-heading">
                   Write something nice, pretend it's 1999!
                 </h5>
@@ -26,8 +26,11 @@ function GuestBook(props) {
                 </div>
               </div>
             ) : (
-              <div className="col-sm">
-                <GuestBookLog></GuestBookLog>
+              <div>
+                <h1 className="content-heading">Guestbook</h1>
+                <div className="col-sm">
+                  <GuestBookLog></GuestBookLog>
+                </div>
               </div>
             )}
           </div>
