@@ -4,15 +4,13 @@
   padding: 4px;
   border: none;
   outline: none;
-  width: 50%;
-  height: 100px;
 }
 
 .input-name {
   padding: 4px;
   border: none;
   outline: none;
-  width: 50%;
+  margin-bottom: 20px;
 }
 
 .submit-btn {
@@ -21,7 +19,7 @@
   border: none;
   color: #d8dee9;
   text-decoration: none;
-  padding: 4px 16px;
+  padding: 8px 20px;
   font-size: 20px;
   border-style: none;
   margin-bottom: 20px;

@@ -4,14 +4,16 @@ import { auth } from "./Firestore";
 import "../../stylesheets/GuestBookForm.css";
 import { v4 as uuidv4 } from "uuid";
 
+import { Form, Col, Button, InputGroup } from "react-bootstrap";
+
 function GuestBookForm() {
   const [alias, setAlias] = useState("");
   const [content, setContent] = useState("");
   const [uid, setUid] = useState(null);
+  const [validated, setValidated] = useState(false);
 
   useEffect(() => {
     auth.signInAnonymously();
-
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUid(user.uid);
@@ -21,8 +23,20 @@ function GuestBookForm() {
     });
   }, []);
 
+  const handleSubmit = (e) => {
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+      e.stopPropagation();
+    } else {
+      addPost(e);
+    }
+    setValidated(true);
+  };
+
   const addPost = async (e) => {
     e.preventDefault();
+    e.stopPropagation();
     const users = firestore.firestore().collection("users");
     const snapshot = await users.where("uid", "==", uid).get();
 
@@ -38,44 +52,47 @@ function GuestBookForm() {
       firestore.firestore().collection("users").add({
         uid: uid,
       });
-
-      setAlias("");
-      setContent("");
     } else {
       alert(
         "In order to keep load reasonable, wait a bit before writing a new message!"
       );
     }
+    setAlias("");
+      setContent("");
+      setValidated(false);
   };
 
   return (
-    <form onSubmit={addPost}>
-      <div className="form-group">
-        <input
-          required
-          type="text"
-          name="alias"
-          className="input-name"
-          placeholder="Name"
-          onChange={(e) => setAlias(e.target.value)}
-          value={alias}
-        />
-      </div>
-      <div className="form-group">
-        <textarea
-          required
-          className="input-content"
-          type="text"
-          name="content"
-          placeholder="Say hi!"
-          onChange={(e) => setContent(e.target.value)}
-          value={content}
-        />
-      </div>
-      <button type="submit" className="submit-btn">
-        Submit
-      </button>
-    </form>
+    <div>
+      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form.Row>
+          <Form.Group as={Col} md="8" controlId="validationCustom01">
+            <Form.Control
+              className="input-name"
+              size="lg"
+              required
+              type="text"
+              placeholder="Name"
+              value={alias}
+              onChange={(e) => setAlias(e.target.value)}
+            />
+            <Form.Control
+              className="input-content"
+              size="lg"
+              as="textarea"
+              rows="3"
+              required
+              placeholder="Write something!"
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
+            />
+          </Form.Group>
+        </Form.Row>
+        <button type="submit" className="submit-btn">
+          Submit
+        </button>
+      </Form>
+    </div>
   );
 }
 
