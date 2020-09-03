@@ -58,8 +58,8 @@ function GuestBookForm() {
       );
     }
     setAlias("");
-      setContent("");
-      setValidated(false);
+    setContent("");
+    setValidated(false);
   };
 
   return (
@@ -86,6 +86,9 @@ function GuestBookForm() {
               value={content}
               onChange={(e) => setContent(e.target.value)}
             />
+            <Form.Control.Feedback type="invalid">
+              Please write your name and a message!
+            </Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
         <button type="submit" className="submit-btn">
