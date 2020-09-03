@@ -1,50 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { firestore, collectionData } from "./Firestore";
 import "../../stylesheets/GuestBookLog.css";
 
-class GuestBookLog extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      posts: [],
-    };
-  }
+function GuestBookLog() {
+  const [posts, setPosts] = useState([]);
 
-  componentDidMount() {
+  useEffect(() => {
     const postsRef = firestore.collection("posts");
     collectionData(postsRef.orderBy("timestamp", "desc"), "id").subscribe(
       (posts) => {
-        this.setState({
-          posts: posts,
-        });
+        setPosts(posts);
       }
     );
-  }
 
-  componentWillUnmount() {
-    this.setState({
-      posts: [],
-    });
-  }
+    return () => {
+      setPosts([]);
+    };
 
-  render() {
-    return (
-      <div className="post-container">
-        <ul className="list-group">
-          {this.state.posts.map((post) => {
-            return (
-              <div className="card" key={post.id}>
-                <div className="card-body">
-                  <h5 className="card-text">{post.content}</h5>
-                  <i className="card-title">{post.alias}</i>
-                </div>
+  }, []);
+
+  return (
+    <div className="post-container">
+      <ul className="list-group">
+        {posts.map((post) => {
+          return (
+            <div className="card" key={post.id}>
+              <div className="card-body">
+                <h5 className="card-text">{post.content}</h5>
+                <i className="card-title">{post.alias}</i>
               </div>
-            );
-          })}
-        </ul>
-      </div>
-    );
-  }
+            </div>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
 
 export default GuestBookLog;
