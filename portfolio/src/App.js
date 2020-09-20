@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import './stylesheets/fonts.css'
 import Layout from "./components/Layout";
 
 function App() {
