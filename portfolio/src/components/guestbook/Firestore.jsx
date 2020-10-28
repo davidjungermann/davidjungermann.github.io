@@ -6,7 +6,7 @@ import { collectionData } from "rxfire/firestore";
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const app = firebase.initializeApp({
-  apiKey: apiKey,
+  apiKey: "AIzaSyCEdIpDD5RSD3_9JPyCw8gI06dSEX9h2Qg",
   authDomain: "davidjungermann-8c0d6.firebaseapp.com",
   databaseURL: "https://davidjungermann-8c0d6.firebaseio.com",
   projectId: "davidjungermann-8c0d6",
