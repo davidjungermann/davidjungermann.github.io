@@ -1,2 +1,2 @@
 # davidjungermann.github.io
-Portfolio page.
+Personal website. 
