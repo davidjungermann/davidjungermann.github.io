@@ -9,15 +9,18 @@
   padding: 2%;
   align-items: center;
   justify-content: center;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
 }
 
 .header-text {
   color: #d8dee9;
-  padding-left: 10px;
+  padding-left: 5%;
 }
 
 .profile-image {
   height: 15%;
   width: 15%;
 }
-
