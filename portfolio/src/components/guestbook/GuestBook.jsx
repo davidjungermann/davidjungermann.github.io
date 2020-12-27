@@ -1,12 +1,10 @@
 import React from "react";
-import { FullpageSection } from "@ap.cx/react-fullpage";
 import GuestBookForm from "./GuestBookForm";
 import GuestBookLog from "./GuestBookLog";
 import "../../stylesheets/Content.css";
 
 function GuestBook(props) {
   return (
-    <FullpageSection>
       <div className="content">
         <div className="container">
           <div className="info-body">
@@ -39,7 +37,6 @@ function GuestBook(props) {
           </div>
         </div>
       </div>
-    </FullpageSection>
   );
 }
 

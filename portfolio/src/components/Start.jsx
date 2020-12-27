@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { useSpring, animated } from "react-spring";
-import { FullpageSection } from "@ap.cx/react-fullpage";
 import Header from "./Header";
 import profile from "../assets/image_profile.jpg";
 import scroll from "../assets/arrow-down.svg";
@@ -19,15 +18,13 @@ function Start() {
   });
 
   return (
-    <FullpageSection>
+    <div>
       <Header />
       <div className="header">
         <img
           src={profile}
-          height="350"
-          width="350"
-          className="rounded-circle"
           alt="Profile"
+          className="profile-image"
         />
         <div>
           <div className="header-text">
@@ -55,7 +52,7 @@ function Start() {
         </animated.div>
       </div>
       <div ref={divRef}></div>
-    </FullpageSection>
+    </div>
   );
 }
 

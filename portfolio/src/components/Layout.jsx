@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Fullpage, { FullPageSections } from "@ap.cx/react-fullpage";
 import Start from "./Start";
 import About from "./About";
 import "../stylesheets/Layout.css";
@@ -22,14 +21,10 @@ export default function Layout() {
 
   return (
     <div className="">
-      <Fullpage>
-        <FullPageSections>
-          <Start />
-          <About />
-          <Projects isDesktop={isDesktop} />
-          <GuestBook isDesktop={isDesktop}/>
-        </FullPageSections>
-      </Fullpage>
+      <Start />
+      <About />
+      <Projects isDesktop={isDesktop} />
+      <GuestBook isDesktop={isDesktop} />
     </div>
   );
 }

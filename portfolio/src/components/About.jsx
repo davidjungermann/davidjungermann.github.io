@@ -1,11 +1,9 @@
 import React from "react";
-import { FullpageSection } from "@ap.cx/react-fullpage";
 import resume from "../assets/Jungermann_David_Resume.pdf";
 import "../stylesheets/Content.css";
 
 function About() {
   return (
-    <FullpageSection>
       <div className="content">
         <div className="container">
           <div className="info-body">
@@ -43,7 +41,6 @@ function About() {
           </div>
         </div>
       </div>
-    </FullpageSection>
   );
 }
 

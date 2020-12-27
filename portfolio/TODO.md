@@ -1,1 +1,0 @@
-More adjustments for mobile.  
