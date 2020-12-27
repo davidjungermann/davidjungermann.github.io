@@ -23,8 +23,8 @@ export default function Layout() {
     <div className="">
       <Start isDesktop={isDesktop} />
       <About />
-      <Projects isDesktop={isDesktop} />
-      <GuestBook isDesktop={isDesktop} />
+      <Projects />
+      <GuestBook />
     </div>
   );
 }
