@@ -5,7 +5,7 @@ import "../stylesheets/Header.css";
 
 function Header() {
   return (
-    <div className="float-right">
+    <div className="icons-root">
       <a className="github" href="https://github.com/davidjungermann">
         <img src={github} height="40" width="40" alt="Github" />
       </a>

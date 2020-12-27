@@ -1,8 +1,5 @@
-.float-right {
-    padding-right: 0.5%;
-    padding-top: 0.5%;
-}
-
-.github {
-    padding-right: 5px;
+.icons-root {
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
 }

@@ -1,14 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useSpring, animated } from "react-spring";
 import Header from "./Header";
 import profile from "../assets/image_profile.jpg";
-import scroll from "../assets/arrow-down.svg";
 import "../stylesheets/Start.css";
 
 function Start() {
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-  const divRef = useRef(null);
-
   const { x } = useSpring({
     loop: true,
     delay: 3000,
@@ -18,24 +14,10 @@ function Start() {
   });
 
   return (
-    <div>
+    <div className="layout-root">
       <Header />
       <div className="header">
-        <img
-          src={profile}
-          alt="Profile"
-          className="profile-image"
-        />
-        <div>
-          <div className="header-text">
-            <h1>David Jungermann</h1>
-            <h5>5th year MSc student at LTH</h5>
-            <h5>
-              Full stack developer in the Student Talent program at Tetra Pak
-            </h5>
-          </div>
-          <div></div>
-        </div>
+        <img src={profile} alt="Profile" className="profile-image" />
         <animated.div
           className="scroll"
           style={{
@@ -46,12 +28,16 @@ function Start() {
               })
               .to((x) => `translate3d(0px, ${x}px, 0px)`),
           }}
-          onClick={() => scrollToRef(divRef)}
         >
-          <img src={scroll} height="40" width="40" alt="scroll"></img>
+          <div className="header-text">
+            <h1>David Jungermann</h1>
+            <h5>5th year MSc student at LTH</h5>
+            <h5>
+              Full stack developer in the Student Talent program at Tetra Pak
+            </h5>
+          </div>
         </animated.div>
       </div>
-      <div ref={divRef}></div>
     </div>
   );
 }
