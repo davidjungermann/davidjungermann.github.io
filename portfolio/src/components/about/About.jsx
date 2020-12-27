@@ -1,6 +1,6 @@
 import React from "react";
-import resume from "../assets/Jungermann_David_Resume.pdf";
-import "../stylesheets/Content.css";
+import resume from "../../assets/Jungermann_David_Resume.pdf";
+import "../../stylesheets/Content.css";
 
 function About() {
   return (

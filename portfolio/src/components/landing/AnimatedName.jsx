@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
+import React from "react";
 import { useTrail, a } from "react-spring";
-import "../stylesheets/AnimatedName.css";
+import "../../stylesheets/AnimatedName.css";
 
 function AnimatedName({ open, children, ...props }) {
   var uniqid = require("uniqid");

@@ -3,8 +3,6 @@ import "firebase/auth";
 import "firebase/firestore";
 import { collectionData } from "rxfire/firestore";
 
-const apiKey = process.env.REACT_APP_API_KEY;
-
 const app = firebase.initializeApp({
   apiKey: "AIzaSyCEdIpDD5RSD3_9JPyCw8gI06dSEX9h2Qg",
   authDomain: "davidjungermann-8c0d6.firebaseapp.com",

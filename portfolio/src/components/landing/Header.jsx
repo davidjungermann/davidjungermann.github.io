@@ -1,7 +1,7 @@
 import React from "react";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.png";
-import "../stylesheets/Header.css";
+import github from "../../assets/github.svg";
+import linkedin from "../../assets/linkedin.png";
+import "../../stylesheets/Header.css";
 
 function Header() {
   return (

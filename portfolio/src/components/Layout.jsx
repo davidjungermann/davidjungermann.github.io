@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Start from "./Start";
-import About from "./About";
+import Start from "./landing/Start";
+import About from "./about/About";
 import "../stylesheets/Layout.css";
 import Projects from "./projects/Projects";
 import GuestBook from "./guestbook/GuestBook";
@@ -21,7 +21,7 @@ export default function Layout() {
 
   return (
     <div className="">
-      <Start />
+      <Start isDesktop={isDesktop} />
       <About />
       <Projects isDesktop={isDesktop} />
       <GuestBook isDesktop={isDesktop} />
