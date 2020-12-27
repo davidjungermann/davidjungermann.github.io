@@ -5,38 +5,24 @@ import "../../stylesheets/Content.css";
 
 function GuestBook(props) {
   return (
-      <div className="content">
-        <div className="container">
-          <div className="info-body">
-            {props.isDesktop ? (
-              <div>
-                <h1>Guestbook</h1>
-                <h5 className="content-heading">
-                  Write something nice, pretend it's 1999!
-                </h5>
-                <div className="row">
-                  <div className="col-sm">
-                    <GuestBookForm></GuestBookForm>
-                  </div>
-                  <div className="col-sm">
-                    <GuestBookLog></GuestBookLog>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div>
-                <h1>Guestbook</h1>
-                <h5 className="content-heading">
-                  Use a device with a larger screen to write messages!
-                </h5>
-                <div className="col-sm">
-                  <GuestBookLog></GuestBookLog>
-                </div>
-              </div>
-            )}
+    <div className="content">
+      <div className="container">
+        <div className="info-body">
+          <h1>Guestbook</h1>
+          <h5 className="content-heading">
+            Write something nice, pretend it's 1999!
+          </h5>
+          <div className="row">
+            <div className="col-sm">
+              <GuestBookForm></GuestBookForm>
+            </div>
+            <div className="col-sm">
+              <GuestBookLog></GuestBookLog>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   );
 }
 

@@ -1,13 +1,8 @@
 import React from "react";
-import ProjectsContentDesktop from "./ProjectsContentDesktop";
-import ProjectsContentMobile from "./ProjectsContentMobile";
+import ProjectsContent from "./ProjectsContent";
 
 function Projects(props) {
-  return (
-    <div>
-      {props.isDesktop ? <ProjectsContentDesktop /> : <ProjectsContentMobile />}
-    </div>
-  );
+  return <ProjectsContent />;
 }
 
 export default Projects;
