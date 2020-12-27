@@ -4,6 +4,7 @@ import { useTrail, a } from "react-spring";
 import "../stylesheets/AnimatedName.css";
 
 function AnimatedName({ open, children, ...props }) {
+  var uniqid = require("uniqid");
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
     config: { mass: 10, tension: 1500, friction: 300 },
@@ -17,14 +18,14 @@ function AnimatedName({ open, children, ...props }) {
       <div>
         {trail.map(({ x, height, ...rest }, index) => (
           <a.div
-            key={items[index]}
+            key={uniqid()}
             className="animated-name-text"
             style={{
               ...rest,
               transform: x.to((x) => `translate3d(0,${x}px,0)`),
             }}
           >
-            <a.div style={{ height }}>{items[index]}</a.div>
+            <a.div>{items[index]}</a.div>
           </a.div>
         ))}
       </div>

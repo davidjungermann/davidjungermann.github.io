@@ -10,7 +10,6 @@ function Start() {
     <div className="layout-root">
       <Header />
       <div className="header">
-        <img src={profile} alt="Profile" className="profile-image" />
 
         <AnimatedName
           className="header-text"
