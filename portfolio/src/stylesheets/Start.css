@@ -4,7 +4,7 @@
 
 .header-desktop {
   border-radius: 0 !important;
-  height: inherit;
+  height: 100%;
   display: flex;
   padding: 2%;
   align-items: center;

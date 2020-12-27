@@ -20,7 +20,7 @@ export default function Layout() {
   });
 
   return (
-    <div className="">
+    <div className="root">
       <Start isDesktop={isDesktop} />
       <About />
       <Projects />

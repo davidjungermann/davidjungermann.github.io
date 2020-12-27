@@ -34,7 +34,7 @@ function Start(props) {
             open={open}
             onClick={() => set((state) => !state)}
           >
-            <h4 className="mobile-name">David Jungermann</h4>
+            <h3 className="mobile-name">David Jungermann</h3>
           </AnimatedName>
         </div>
       )}
