@@ -4,7 +4,7 @@ import profile from "../../assets/image_profile.jpg";
 import AnimatedName from "./AnimatedName";
 import "../../stylesheets/Start.css";
 
-function Start(...props) {
+function Start(props) {
   const [open, set] = useState(true);
 
   return (
@@ -12,10 +12,8 @@ function Start(...props) {
       <Header />
 
       {props.isDesktop ? (
-        <h1>RÖV</h1>
-      ) : (
         <div className="header">
-          <img src={profile} alt="Profile" className="profile-image" />
+          <img src={profile} alt="Profile" className="profile-image-desktop" />
           <AnimatedName
             className="header-text"
             open={open}
@@ -27,6 +25,10 @@ function Start(...props) {
               Full stack developer in the Student Talent program at Tetra Pak
             </h5>
           </AnimatedName>
+        </div>
+      ) : (
+        <div className="header">
+          <img src={profile} alt="Profile" className="profile-image-mobile" />
         </div>
       )}
     </div>
