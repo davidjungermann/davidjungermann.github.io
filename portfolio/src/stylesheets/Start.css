@@ -2,7 +2,7 @@
   background-color: #3b4252 !important;
 }
 
-.header {
+.header-desktop {
   border-radius: 0 !important;
   height: inherit;
   display: flex;
@@ -15,9 +15,24 @@
   user-select: none; /* Likely future */
 }
 
+.header-mobile {
+  border-radius: 0 !important;
+  height: inherit;
+  display: flex;
+  padding: 2%;
+  align-items: flex-start;
+  justify-content: center;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  box-sizing: border-box;
+}
+
 .header-text {
   color: #d8dee9;
   padding-left: 10%;
+  margin: auto 0;
 }
 
 .profile-image-desktop {
@@ -29,3 +44,4 @@
   height: 50%;
   width: 50%;
 }
+

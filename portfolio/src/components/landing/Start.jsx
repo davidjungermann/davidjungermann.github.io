@@ -12,7 +12,7 @@ function Start(props) {
       <Header />
 
       {props.isDesktop ? (
-        <div className="header">
+        <div className="header-desktop">
           <img src={profile} alt="Profile" className="profile-image-desktop" />
           <AnimatedName
             className="header-text"
@@ -27,8 +27,15 @@ function Start(props) {
           </AnimatedName>
         </div>
       ) : (
-        <div className="header">
+        <div className="header-mobile">
           <img src={profile} alt="Profile" className="profile-image-mobile" />
+          <AnimatedName
+            className="header-text"
+            open={open}
+            onClick={() => set((state) => !state)}
+          >
+            <h4 className="mobile-name">David Jungermann</h4>
+          </AnimatedName>
         </div>
       )}
     </div>
