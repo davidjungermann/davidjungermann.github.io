@@ -9,8 +9,8 @@ function AnimatedPicture({ open, children, ...props }) {
     config: { mass: 10, tension: 2500, friction: 500 },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
-    from: { opacity: 0, x: 20 },
-    delay: 500,
+    from: { opacity: 0, x: 30 },
+    delay: 750,
   });
   return (
     <div className="animated-name-root" {...props}>
