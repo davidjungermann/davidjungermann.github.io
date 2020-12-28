@@ -1,27 +1,27 @@
 import React from "react";
 import { useTrail, a } from "react-spring";
-import "../../stylesheets/AnimatedName.css";
+import "../../stylesheets/AnimatedPicture.css";
 
-function AnimatedName({ open, children, ...props }) {
+function AnimatedPicture({ open, children, ...props }) {
   var uniqid = require("uniqid");
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 1, tension: 5000, friction: 500  },
+    config: { mass: 10, tension: 2500, friction: 500 },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
-    height: open ? 110 : 0,
-    from: { opacity: 0, x: 20, height: 0 },
+    from: { opacity: 0, x: 20 },
+    delay: 500,
   });
   return (
     <div className="animated-name-root" {...props}>
       <div>
-        {trail.map(({ x, height, ...rest }, index) => (
+        {trail.map(({ x, ...rest }, index) => (
           <a.div
             key={uniqid()}
-            className="animated-name-text"
+            className="animated-name-picture"
             style={{
               ...rest,
-              transform: x.to((x) => `translate3d(0,${x}px,0)`),
+              transform: x.to((x) => `translate3d(-${x}px, 0 ,0)`),
             }}
           >
             <a.div>{items[index]}</a.div>
@@ -32,4 +32,4 @@ function AnimatedName({ open, children, ...props }) {
   );
 }
 
-export default AnimatedName;
+export default AnimatedPicture;
