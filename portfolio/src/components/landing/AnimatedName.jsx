@@ -11,6 +11,7 @@ function AnimatedName({ open, children, ...props }) {
     x: open ? 0 : 20,
     height: open ? 110 : 0,
     from: { opacity: 0, x: 20, height: 0 },
+    delay: 750,
   });
   return (
     <div className="animated-name-root" {...props}>

@@ -6,11 +6,10 @@ function AnimatedPicture({ open, children, ...props }) {
   var uniqid = require("uniqid");
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 10, tension: 2500, friction: 500 },
+    config: { mass: 100, tension: 1000, friction: 500 },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
     from: { opacity: 0, x: 30 },
-    delay: 750,
   });
   return (
     <div className="animated-name-root" {...props}>
