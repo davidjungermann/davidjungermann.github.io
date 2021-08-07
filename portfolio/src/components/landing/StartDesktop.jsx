@@ -17,8 +17,8 @@ function StartDesktop() {
         onClick={() => setTextOpen((state) => !state)}
       >
         <h1>David Jungermann</h1>
-        <h5>5th year MSc student at LTH</h5>
-        <h5>Full stack developer in the Student Talent program at Tetra Pak</h5>
+        <h5>Software Engineer</h5>
+        <h5>IT Consultant at Netlight</h5>
       </AnimatedName>
     </div>
   );

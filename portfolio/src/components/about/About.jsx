@@ -9,24 +9,26 @@ function About() {
         <div className="info-body">
           <h1 className="content-heading">About me</h1>
           <p>
-            My name is David Jungermann, and I&apos;m an MSc student in{' '}
-            <b>Information and Communication engineering technologies</b> at LTH, graduating spring
-            2021. Currently based in Lund, Sweden.
+            My name is David Jungermann, and I'm a <b>Software Engineer</b>, with focus on{' '}
+            <b>fullstack development</b>. I graduated from Lunds Tekniska Högskola in the spring of
+            2021, with an MSc degree in{' '}
+            <b>Information and Communication engineering technologies</b>.
           </p>
           <p>
-            As of January 2021, I will write my master thesis within Interaction Design at{' '}
+            As of August 2021, I'm working as an IT consultant at{' '}
+            <b>
+              <a href="https://netlight.com/">Netlight</a>
+            </b>{' '}
+            in Stockholm, Sweden.
+          </p>
+          <p>
+            My master's thesis was written within Interaction Design at{' '}
             <b>
               <a href="https://homepal.se/">Homepal</a>
             </b>
-            , with the working title:{' '}
-            <i>Introducing Pedagogics and Interactive UX in Documentation and Developer Tools</i>,
-            where we will attempt to improve Homepal&apos;s developer tools and API documentation
-            using UX and Interaction Design.
-          </p>
-          <p>
-            I&apos;m currently working my second year as a full stack developer at Tetra Pak, as a
-            part of their <b>Student Talent program</b>, which involves part time work during the
-            semester, and full time work during summer.
+            , with the title: <i>Optimizing the usability of REST API reference documentation</i>.
+            The master's thesis explores what features and properties should be included in a
+            reference documentation order to support the needs of the end users.
           </p>
           <p>
             In my spare time I make a lot of music, both individually and in bands. Furthermore, I
@@ -43,10 +45,8 @@ function About() {
           </p>
           Shoot me an{' '}
           <b>
-                          
-                          
-                          <a href="mailto:david.jungermann@gmail.com">email</a>
-          </b>{' '}
+            <a href="mailto:david.jungermann@gmail.com">email</a>
+          </b>
           , or write in my guestbook below if you want to get in touch!
         </div>
       </div>

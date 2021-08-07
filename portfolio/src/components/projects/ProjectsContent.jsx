@@ -35,11 +35,11 @@ function ProjectsContent() {
 
           <div className="row">
             <WebCard
-              title="API and database implementation"
-              link="https://github.com/davidjungermann/EDAF75-Project"
+              title="REST API reference documentation"
+              link="https://github.com/davidjungermann/homepal-api-documentation"
             >
-              REST API with corresponding database that models production of cookies. Built in Java,
-              using Spark, and SQLite.
+              Code for master's thesis project, that includes documentation for a contained .NET
+              REST API, written in React.
             </WebCard>
 
             <WebCard
