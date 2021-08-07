@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import profile from '../../assets/image_profile.jpg';
 import AnimatedName from './AnimatedName';
-import AnimatedPicture from './AnimatedPicture';
 import '../../stylesheets/Header.css';
 
 function StartDesktop() {
   const [textOpen, setTextOpen] = useState(true);
   return (
     <div className="header-desktop">
-      <AnimatedPicture open={textOpen} onClick={() => setTextOpen((state) => !state)}>
-        <img src={profile} alt="Profile" className="profile-image-desktop" />
-      </AnimatedPicture>
+      <img src={profile} alt="Profile" className="profile-image-desktop" />
+
       <AnimatedName
         className="header-text"
         open={textOpen}

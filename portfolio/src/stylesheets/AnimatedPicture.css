@@ -4,3 +4,7 @@
   height: inherit;
   width: inherit;
 }
+
+.animated-image-root {
+  height: 10px;
+}
