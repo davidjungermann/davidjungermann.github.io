@@ -1,22 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { firestore, collectionData } from "./Firestore";
-import "../../stylesheets/GuestBookLog.css";
+import React, { useState, useEffect } from 'react';
+import { firestore, collectionData } from './Firestore';
+import '../../stylesheets/GuestBookLog.css';
 
 function GuestBookLog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const postsRef = firestore.collection("posts");
-    collectionData(postsRef.orderBy("timestamp", "desc"), "id").subscribe(
-      (posts) => {
-        setPosts(posts);
-      }
-    );
+    const postsRef = firestore.collection('posts');
+    collectionData(postsRef.orderBy('timestamp', 'desc'), 'id').subscribe((posts) => {
+      setPosts(posts);
+    });
 
     return () => {
       setPosts([]);
     };
-
   }, []);
 
   return (

@@ -1,8 +1,6 @@
 .animated-name-picture {
-    position: relative;
-    will-change: transform, opacity;
-    height: inherit;
-    width: inherit;
-  }
-  
-  
+  position: relative;
+  will-change: transform, opacity;
+  height: inherit;
+  width: inherit;
+}

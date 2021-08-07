@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import firestore from "./Firestore";
-import { auth } from "./Firestore";
-import "../../stylesheets/GuestBookForm.css";
-import { v4 as uuidv4 } from "uuid";
+import React, { useState, useEffect } from 'react';
+import firestore from './Firestore';
+import { auth } from './Firestore';
+import '../../stylesheets/GuestBookForm.css';
+import { v4 as uuidv4 } from 'uuid';
 
-import { Form, Col } from "react-bootstrap";
+import { Form, Col } from 'react-bootstrap';
 
 function GuestBookForm() {
-  const [alias, setAlias] = useState("");
-  const [content, setContent] = useState("");
+  const [alias, setAlias] = useState('');
+  const [content, setContent] = useState('');
   const [uid, setUid] = useState(null);
   const [validated, setValidated] = useState(false);
   const [posted, setPosted] = useState(false);
@@ -38,11 +38,11 @@ function GuestBookForm() {
   const addPost = async (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const users = firestore.firestore().collection("users");
-    const snapshot = await users.where("uid", "==", uid).get();
+    const users = firestore.firestore().collection('users');
+    const snapshot = await users.where('uid', '==', uid).get();
 
     if (snapshot.empty) {
-      firestore.firestore().collection("posts").add({
+      firestore.firestore().collection('posts').add({
         id: uuidv4(),
         alias: alias,
         content: content,
@@ -50,14 +50,14 @@ function GuestBookForm() {
         uid: uid,
       });
 
-      firestore.firestore().collection("users").add({
+      firestore.firestore().collection('users').add({
         uid: uid,
       });
     } else {
       setPosted(true);
     }
-    setAlias("");
-    setContent("");
+    setAlias('');
+    setContent('');
     setValidated(false);
   };
 
@@ -91,8 +91,7 @@ function GuestBookForm() {
             </Form.Control.Feedback>
             {posted ? (
               <p className="posted-message">
-                Sorry, you can't write two messages in quick succession, wait a
-                bit!
+                Sorry, you can't write two messages in quick succession, wait a bit!
               </p>
             ) : (
               <div></div>

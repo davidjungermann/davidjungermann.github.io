@@ -1,7 +1,7 @@
-import React from "react";
-import GuestBookForm from "./GuestBookForm";
-import GuestBookLog from "./GuestBookLog";
-import "../../stylesheets/Content.css";
+import React from 'react';
+import GuestBookForm from './GuestBookForm';
+import GuestBookLog from './GuestBookLog';
+import '../../stylesheets/Content.css';
 
 function GuestBook(props) {
   return (
@@ -9,9 +9,7 @@ function GuestBook(props) {
       <div className="container">
         <div className="info-body">
           <h1>Guestbook</h1>
-          <h5 className="content-heading">
-            Write something nice, pretend it's 1999!
-          </h5>
+          <h5 className="content-heading">Write something nice, pretend it's 1999!</h5>
           <div className="row">
             <div className="col-sm">
               <GuestBookForm></GuestBookForm>

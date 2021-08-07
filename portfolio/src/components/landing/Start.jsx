@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "./Header";
-import StartDesktop from "./StartDesktop";
-import StartMobile from "./StartMobile";
-import "../../stylesheets/Start.css";
+import React from 'react';
+import Header from './Header';
+import StartDesktop from './StartDesktop';
+import StartMobile from './StartMobile';
+import '../../stylesheets/Start.css';
 
 function Start(props) {
   return (

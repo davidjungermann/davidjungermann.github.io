@@ -1,12 +1,12 @@
-import React from "react";
-import { useTrail, a } from "react-spring";
-import "../../stylesheets/AnimatedName.css";
+import React from 'react';
+import { useTrail, a } from 'react-spring';
+import '../../stylesheets/AnimatedName.css';
 
 function AnimatedName({ open, children, ...props }) {
-  var uniqid = require("uniqid");
+  var uniqid = require('uniqid');
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 1, tension: 5000, friction: 500  },
+    config: { mass: 1, tension: 5000, friction: 500 },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
     height: open ? 110 : 0,
