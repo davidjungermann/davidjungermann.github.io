@@ -42,10 +42,12 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint",
-      "pretty-quick --staged",
-      "git add"
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "src/**/*.{css,scss,html}": [
+      "prettier --write"
     ]
   },
   "eslintConfig": {
