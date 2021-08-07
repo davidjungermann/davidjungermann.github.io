@@ -9,28 +9,23 @@ function About() {
         <div className="info-body">
           <h1 className="content-heading">About me</h1>
           <p>
-            My name is David Jungermann, and I'm an MSc student in{' '}
+            My name is David Jungermann, and I&apos;m an MSc student in{' '}
             <b>Information and Communication engineering technologies</b> at LTH, graduating spring
             2021. Currently based in Lund, Sweden.
           </p>
           <p>
-            
-            
-            
-            
-            
-          As of January 2021, I will write my master thesis within Interaction Design at{' '}
+            As of January 2021, I will write my master thesis within Interaction Design at{' '}
             <b>
               <a href="https://homepal.se/">Homepal</a>
             </b>
             , with the working title:{' '}
             <i>Introducing Pedagogics and Interactive UX in Documentation and Developer Tools</i>,
-            where we will attempt to improve Homepal's developer tools and API documentation using
-            UX and Interaction Design.
+            where we will attempt to improve Homepal&apos;s developer tools and API documentation
+            using UX and Interaction Design.
           </p>
           <p>
-            I'm currently working my second year as a full stack developer at Tetra Pak, as a part
-            of their <b>Student Talent program</b>, which involves part time work during the
+            I&apos;m currently working my second year as a full stack developer at Tetra Pak, as a
+            part of their <b>Student Talent program</b>, which involves part time work during the
             semester, and full time work during summer.
           </p>
           <p>
@@ -48,7 +43,9 @@ function About() {
           </p>
           Shoot me an{' '}
           <b>
-            <a href="mailto:david.jungermann@gmail.com">email</a>
+                          
+                          
+                          <a href="mailto:david.jungermann@gmail.com">email</a>
           </b>{' '}
           , or write in my guestbook below if you want to get in touch!
         </div>

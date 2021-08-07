@@ -19,16 +19,14 @@ function GuestBookLog() {
   return (
     <div className="post-container">
       <ul className="list-group">
-        {posts.map((post) => {
-          return (
+        {posts.map((post) => (
             <div className="card" key={post.id}>
               <div className="card-body">
                 <h5 className="card-text">{post.content}</h5>
                 <i className="card-title">{post.alias}</i>
               </div>
             </div>
-          );
-        })}
+          ))}
       </ul>
     </div>
   );

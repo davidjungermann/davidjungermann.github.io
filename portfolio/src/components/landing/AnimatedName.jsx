@@ -3,7 +3,7 @@ import { useTrail, a } from 'react-spring';
 import '../../stylesheets/AnimatedName.css';
 
 function AnimatedName({ open, children, ...props }) {
-  var uniqid = require('uniqid');
+  const uniqid = require('uniqid');
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
     config: { mass: 1, tension: 5000, friction: 500 },

@@ -3,7 +3,7 @@ import { useTrail, a } from 'react-spring';
 import '../../stylesheets/AnimatedPicture.css';
 
 function AnimatedPicture({ open, children, ...props }) {
-  var uniqid = require('uniqid');
+  const uniqid = require('uniqid');
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
     config: { mass: 100, tension: 1000, friction: 500 },

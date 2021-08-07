@@ -35,7 +35,10 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn run build && cp ./src/CNAME build",
     "deploy": "gh-pages -b master -d build",
-    "prepare": "husky install"
+    "eslint": "eslint src/**/*.{js,jsx}",
+    "eslint:fix": "eslint --fix src/**/*.{js,jsx}",
+    "prettier": "prettier src/**/*.{js,jsx,css}",
+    "prettier:fix": "prettier --write src/**/*.{js,jsx,css}*"
   },
   "husky": {
     "hooks": {
@@ -43,7 +46,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,js,jsx}": [
+    "src/**/*.{js,jsx}": [
       "prettier --write",
       "eslint --fix"
     ],
@@ -74,6 +77,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "gh-pages": "^3.1.0",
+    "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
     "pretty-quick": "^3.1.1"
   }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import firestore from './Firestore';
-import { auth } from './Firestore';
+import firestore, { auth } from './Firestore';
+
 import '../../stylesheets/GuestBookForm.css';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -44,14 +44,14 @@ function GuestBookForm() {
     if (snapshot.empty) {
       firestore.firestore().collection('posts').add({
         id: uuidv4(),
-        alias: alias,
-        content: content,
+        alias,
+        content,
         timestamp: firestore.firestore.Timestamp.now(),
-        uid: uid,
+        uid,
       });
 
       firestore.firestore().collection('users').add({
-        uid: uid,
+        uid,
       });
     } else {
       setPosted(true);
@@ -94,7 +94,7 @@ function GuestBookForm() {
                 Sorry, you can't write two messages in quick succession, wait a bit!
               </p>
             ) : (
-              <div></div>
+              <div />
             )}
           </Form.Group>
         </Form.Row>

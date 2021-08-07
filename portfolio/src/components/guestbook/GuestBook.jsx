@@ -12,10 +12,10 @@ function GuestBook(props) {
           <h5 className="content-heading">Write something nice, pretend it's 1999!</h5>
           <div className="row">
             <div className="col-sm">
-              <GuestBookForm></GuestBookForm>
+              <GuestBookForm />
             </div>
             <div className="col-sm">
-              <GuestBookLog></GuestBookLog>
+              <GuestBookLog />
             </div>
           </div>
         </div>
