@@ -14,7 +14,13 @@ function About() {
             2021. Currently based in Lund, Sweden.
           </p>
           <p>
-            As of January 2021, I will write my master thesis within Interaction Design at{' '}
+            
+            
+            
+            
+            
+            
+                          As of January 2021, I will write my master thesis within Interaction Design at{' '}
             <b>
               <a href="https://homepal.se/">Homepal</a>
             </b>
