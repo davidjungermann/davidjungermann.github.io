@@ -7,7 +7,6 @@ function StartMobile() {
   const [textOpen, setTextOpen] = useState(true);
   return (
     <div className="header-mobile">
-      <img src={profile} alt="Profile" className="profile-image-mobile" />
 
       <AnimatedName
         className="header-text"

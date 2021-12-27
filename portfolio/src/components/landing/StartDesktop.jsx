@@ -7,7 +7,6 @@ function StartDesktop() {
   const [textOpen, setTextOpen] = useState(true);
   return (
     <div className="header-desktop">
-      <img src={profile} alt="Profile" className="profile-image-desktop" />
 
       <AnimatedName
         className="header-text"
