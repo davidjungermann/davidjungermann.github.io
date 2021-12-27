@@ -68,7 +68,7 @@ function GuestBookForm() {
           <Form.Group as={Col} md="8" controlId="validationCustom01">
             <Form.Control
               className="input-name"
-              autocomplete="off"
+              autoComplete="off"
               size="lg"
               required
               type="text"
