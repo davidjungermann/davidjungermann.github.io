@@ -8,20 +8,23 @@ function ProjectsContent() {
         <div className="info-body">
           <h1 className="content-heading">Projects</h1>
           <div className="row">
+            <WebCard title="Days Since" link="https://github.com/davidjungermann/days-since">
+              React application that automates standup and support rotations, including an
+              interactive counter to ensure teams can celebrate when records are broken
+            </WebCard>
             <WebCard
               title="Vote counting application"
               link="https://github.com/davidjungermann/voting-vg"
             >
               Application used for electronic voting. Used for generating results from votings made
-              in Google Forms. Built in React, uses ExcelJS and Firebase.
+              in Google Forms. Built in React, uses ExcelJS and Firebase
             </WebCard>
 
             <WebCard
               title="Personal website"
               link="https://github.com/davidjungermann/davidjungermann.github.io"
             >
-              Portfolio, which happens to be this very page! Built in React and hosted on Github
-              Pages.
+              The page you are currently on! Built in React and hosted on Github Pages
             </WebCard>
 
             <WebCard
@@ -29,29 +32,29 @@ function ProjectsContent() {
               link="https://github.com/davidjungermann/EDAF90-project"
             >
               Forum mock up, with real-time updating, and database storage. Built in Angular, uses
-              Firestore.
+              Firestore
             </WebCard>
           </div>
 
           <div className="row">
             <WebCard
-              title="REST API reference documentation"
+              title="API reference documentation"
               link="https://github.com/davidjungermann/homepal-api-documentation"
             >
               Code for master's thesis project, that includes documentation for a contained .NET
-              REST API, written in React.
+              REST API, written in React
             </WebCard>
 
             <WebCard
               title="Object oriented programming"
               link="https://github.com/davidjungermann/EDAF60"
             >
-              Two projects that implement OOP principles. Built in Java.
+              Two projects that implement OOP principles. Built in Java
             </WebCard>
 
             <WebCard title="Web security" link="https://github.com/davidjungermann/EITN41">
               Mini-projects concerning web security, including payments, electronic voting and
-              cybersecurity. Written in Python.
+              cybersecurity. Written in Python
             </WebCard>
           </div>
         </div>
