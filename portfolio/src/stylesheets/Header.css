@@ -5,10 +5,9 @@
 }
 
 .face {
-  max-width: 100%; /* Adjust this value if needed */
-  max-height: 300px; /* Example max-height, adjust as needed */
+  max-width: 100%;
+  max-height: 300px;
   height: auto;
-  display: block; /* Ensures it takes its own line */
-  margin: 0 auto; /* Centers the image horizontally */
-  /* Additional styles for positioning or spacing can be added here */
+  display: block;
+  margin: 0 auto;
 }

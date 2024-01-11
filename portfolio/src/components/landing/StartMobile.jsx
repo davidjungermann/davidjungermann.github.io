@@ -11,7 +11,7 @@ function StartMobile() {
         open={textOpen}
         onClick={() => setTextOpen((state) => !state)}
       >
-        <h3 className="mobile-name">Hej!</h3>
+        <h3 className="mobile-name">Hej! :-)</h3>
       </AnimatedName>
     </div>
   );

@@ -10,8 +10,6 @@ function StartDesktop() {
     <Container className="header-desktop">
       <Row>
         <Col xs={12} md={6} className="my-auto">
-          {' '}
-          {/* Adjust column sizes as needed */}
           <img src={face} alt="picture of me" className="face img-fluid" />
         </Col>
         <Col xs={12} md={6} className="my-auto">
