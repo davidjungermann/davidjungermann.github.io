@@ -11,8 +11,8 @@ function About() {
 
           <p>
             I make my living as a software engineer, currently working at Netlight in Stockholm. I
-            mainly work with topics related to cloud, devops and SRE. Big proponent of statically
-            typed languages and hard contracts.
+            mainly work with topics related to cloud, devops and SRE. I'm big on statically typed
+            languages and hard contracts.
           </p>
 
           <p>
