@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import firestore, { auth } from './Firestore';
+import { firestore, auth } from './Firestore';
+import { collection, addDoc, query, where, getDocs, Timestamp } from 'firebase/firestore';
+import { onAuthStateChanged, signInAnonymously } from 'firebase/auth';
+import { v4 as uuidv4 } from 'uuid';
+import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 import '../../stylesheets/GuestBookForm.css';
-import { v4 as uuidv4 } from 'uuid';
-
-import { Form, Col } from 'react-bootstrap';
 
 function GuestBookForm() {
   const [alias, setAlias] = useState('');
@@ -14,8 +17,8 @@ function GuestBookForm() {
   const [posted, setPosted] = useState(false);
 
   useEffect(() => {
-    auth.signInAnonymously();
-    auth.onAuthStateChanged((user) => {
+    signInAnonymously(auth);
+    onAuthStateChanged(auth, (user) => {
       if (user) {
         setUid(user.uid);
       } else {
@@ -38,24 +41,26 @@ function GuestBookForm() {
   const addPost = async (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const users = firestore.firestore().collection('users');
-    const snapshot = await users.where('uid', '==', uid).get();
+    const usersCollection = collection(firestore, 'users');
+    const q = query(usersCollection, where('uid', '==', uid));
+    const snapshot = await getDocs(q);
 
     if (snapshot.empty) {
-      firestore.firestore().collection('posts').add({
+      await addDoc(collection(firestore, 'posts'), {
         id: uuidv4(),
         alias,
         content,
-        timestamp: firestore.firestore.Timestamp.now(),
+        timestamp: Timestamp.now(),
         uid,
       });
 
-      firestore.firestore().collection('users').add({
+      await addDoc(usersCollection, {
         uid,
       });
     } else {
       setPosted(true);
     }
+
     setAlias('');
     setContent('');
     setValidated(false);
@@ -64,7 +69,7 @@ function GuestBookForm() {
   return (
     <div>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
-        <Form.Row>
+        <Row>
           <Form.Group as={Col} md="8" controlId="validationCustom01">
             <Form.Control
               className="input-name"
@@ -97,7 +102,7 @@ function GuestBookForm() {
               <div />
             )}
           </Form.Group>
-        </Form.Row>
+        </Row>
         <button type="submit" className="submit-btn">
           Submit
         </button>
@@ -106,4 +111,4 @@ function GuestBookForm() {
   );
 }
 
-export default GuestBookForm;
+export { GuestBookForm };

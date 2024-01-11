@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import profile from '../../assets/image_profile.jpg';
-import AnimatedName from './AnimatedName';
+import { AnimatedName } from './AnimatedName';
 import '../../stylesheets/Header.css';
 
 function StartMobile() {
   const [textOpen, setTextOpen] = useState(true);
   return (
     <div className="header-mobile">
-
       <AnimatedName
         className="header-text"
         open={textOpen}
@@ -19,4 +17,4 @@ function StartMobile() {
   );
 }
 
-export default StartMobile;
+export { StartMobile };

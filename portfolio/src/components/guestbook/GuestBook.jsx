@@ -1,6 +1,6 @@
 import React from 'react';
-import GuestBookForm from './GuestBookForm';
-import GuestBookLog from './GuestBookLog';
+import { GuestBookForm } from './GuestBookForm';
+import { GuestBookLog } from './GuestBookLog';
 import '../../stylesheets/Content.css';
 
 function GuestBook(props) {
@@ -24,4 +24,4 @@ function GuestBook(props) {
   );
 }
 
-export default GuestBook;
+export { GuestBook };

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import profile from '../../assets/image_profile.jpg';
-import AnimatedName from './AnimatedName';
+import { AnimatedName } from './AnimatedName';
 import '../../stylesheets/Header.css';
 
 function StartDesktop() {
   const [textOpen, setTextOpen] = useState(true);
   return (
     <div className="header-desktop">
-
       <AnimatedName
         className="header-text"
         open={textOpen}
@@ -21,4 +19,4 @@ function StartDesktop() {
   );
 }
 
-export default StartDesktop;
+export { StartDesktop };

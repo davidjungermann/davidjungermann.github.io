@@ -33,4 +33,4 @@ function AnimatedName({ open, children, ...props }) {
   );
 }
 
-export default AnimatedName;
+export { AnimatedName };

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../stylesheets/Content.css';
 import '../../stylesheets/WebCard.css';
 
-function WebCards(props) {
+function WebCard(props) {
   return (
     <div className="col-sm">
       <a href={props.link} className="webcard-link">
@@ -16,4 +16,4 @@ function WebCards(props) {
     </div>
   );
 }
-export default WebCards;
+export { WebCard };

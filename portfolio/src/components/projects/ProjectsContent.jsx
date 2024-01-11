@@ -1,5 +1,5 @@
 import React from 'react';
-import WebCard from './WebCard';
+import { WebCard } from './WebCard';
 
 function ProjectsContent() {
   return (
@@ -60,4 +60,4 @@ function ProjectsContent() {
   );
 }
 
-export default ProjectsContent;
+export { ProjectsContent };

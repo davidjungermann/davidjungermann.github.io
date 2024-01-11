@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Start from './landing/Start';
-import About from './about/About';
+import { Start } from './landing/Start';
+import { About } from './about/About';
 import '../stylesheets/Layout.css';
-import Projects from './projects/Projects';
-import GuestBook from './guestbook/GuestBook';
+import { Projects } from './projects/Projects';
+import { GuestBook } from './guestbook/GuestBook';
 
 export default function Layout() {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 900 && window.innerHeight > 500);

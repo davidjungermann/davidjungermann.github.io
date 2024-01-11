@@ -1,7 +1,7 @@
-import React from 'react';
-import Header from './Header';
-import StartDesktop from './StartDesktop';
-import StartMobile from './StartMobile';
+import { React } from 'react';
+import { Header } from './Header';
+import { StartDesktop } from './StartDesktop';
+import { StartMobile } from './StartMobile';
 import '../../stylesheets/Start.css';
 
 function Start(props) {
@@ -13,4 +13,4 @@ function Start(props) {
   );
 }
 
-export default Start;
+export { Start };
