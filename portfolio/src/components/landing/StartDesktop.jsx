@@ -20,7 +20,7 @@ function StartDesktop() {
             open={textOpen}
             onClick={() => setTextOpen((state) => !state)}
           >
-            <h1>Hej!</h1>
+            <h1>Hej! :-)</h1>
             <h5>I'm David - a software engineer</h5>
           </AnimatedName>
         </Col>

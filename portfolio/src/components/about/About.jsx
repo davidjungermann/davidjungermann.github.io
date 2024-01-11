@@ -10,20 +10,20 @@ function About() {
           <p>My name is David Jungermann, and I try to be creative, but I'm not.</p>
 
           <p>
-            I make my living as a software engineer, currently working at Netlight in Stockholm. I
-            mainly work with topics related to cloud, devops and SRE. I'm big on statically typed
-            languages and hard contracts.
+            I make my living as a software engineer, currently working at Netlight in Stockholm,
+            mainly workin with topics related to cloud, devops and SRE. Statically typed languages
+            and hard contracts is (unfortunately?) a passion of mine
           </p>
 
           <p>
             I find joy in making developers happy - through automation, observability and data
-            driven decision making.
+            driven decision making
           </p>
 
           <p>
-            I'm a hobby hoarder, but outside improving developer experiences, I play music often,
-            but not well, both for myself and in a couple of bands. I like cooking, as well as
-            architecture and design - the non programming kind as well.
+            Outside improving developer experiences, I play music often (not well), both for myself
+            and in some bands. Cooking, as well as architecture and design are also important to me
+            - not only in software
           </p>
         </div>
       </div>
