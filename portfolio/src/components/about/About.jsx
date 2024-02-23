@@ -7,10 +7,8 @@ function About() {
       <div className="container">
         <div className="info-body">
           <h1 className="content-heading">About me</h1>
-          <p>My name is David Jungermann, and I try to be creative, but I'm not.</p>
-
           <p>
-            I make my living as a software engineer, currently working at Netlight in Stockholm,
+            My name is David Jungermann, I make my living as a software engineer. Currently working at Netlight in Stockholm,
             mainly workin with topics related to cloud, devops and SRE. Statically typed languages
             and hard contracts is (unfortunately?) a passion of mine
           </p>
