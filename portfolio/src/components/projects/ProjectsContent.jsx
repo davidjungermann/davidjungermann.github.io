@@ -22,7 +22,7 @@ function ProjectsContent() {
               title="Personal website"
               link="https://github.com/davidjungermann/davidjungermann.github.io"
             >
-              The React page you are currently on
+              The page you are currently on. Built in React with RXJS
             </WebCard>
 
             <WebCard title="Auxe" link="https://auxe.se">
