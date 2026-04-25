@@ -26,8 +26,8 @@ function ProjectsContent() {
             </WebCard>
 
             <WebCard title="Auxe" link="https://auxe.se">
-              Collaborative jukebox where everyone in the room can queue and vote on songs together
-              in real-time
+              Collaborative jukebox where everyone in a room can queue and vote on songs together in
+              real-time
             </WebCard>
           </div>
 
@@ -40,7 +40,7 @@ function ProjectsContent() {
               .NET API
             </WebCard>
 
-            <WebCard title="OS-Tider" link="https://ostider.se">
+            <WebCard title="ostider.se" link="https://ostider.se">
               Schedule for the Olympics with data aggregation to view broadcasting channels,
               participants, Swedish medal prospects, and number of medals in a single place
             </WebCard>
