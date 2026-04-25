@@ -41,8 +41,8 @@ function ProjectsContent() {
             </WebCard>
 
             <WebCard title="OS-Tider" link="https://ostider.se">
-              Complete broadcast schedule for the 2026 Winter Olympics, with filtering by sport,
-              channel (SVT, TV4, HBO Max), and Swedish medal prospects
+              Schedule for the Olympics with data aggregation to view broadcasting channels,
+              participants, Swedish medal prospects, and number of medals in a single place
             </WebCard>
 
             <WebCard title="Security" link="https://github.com/davidjungermann/EITN41">
