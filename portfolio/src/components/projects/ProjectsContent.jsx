@@ -25,9 +25,9 @@ function ProjectsContent() {
               The React page you are currently on
             </WebCard>
 
-            <WebCard title="Message board" link="https://github.com/davidjungermann/EDAF90-project">
-              Internet forum, with real-time updates and authentication. Built using Angular,
-              Firebase and rxjs
+            <WebCard title="Auxe" link="https://auxe.se">
+              Collaborative jukebox where everyone in the room can queue and vote on songs together
+              in real-time
             </WebCard>
           </div>
 
@@ -40,8 +40,9 @@ function ProjectsContent() {
               .NET API
             </WebCard>
 
-            <WebCard title="OOP" link="https://github.com/davidjungermann/EDAF60">
-              Two Java projects that implement object oriented principles
+            <WebCard title="OS-Tider" link="https://ostider.se">
+              Complete broadcast schedule for the 2026 Winter Olympics, with filtering by sport,
+              channel (SVT, TV4, HBO Max), and Swedish medal prospects
             </WebCard>
 
             <WebCard title="Security" link="https://github.com/davidjungermann/EITN41">
