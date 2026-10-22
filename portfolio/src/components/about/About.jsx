@@ -24,6 +24,10 @@ function About() {
             and in some bands. Cooking, as well as architecture and design are also important to me
             - not only in software
           </p>
+
+          <p>
+            I'm building <a href="https://avant.codes">avant</a>
+          </p>
         </div>
       </div>
     </div>
